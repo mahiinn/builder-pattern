@@ -22,6 +22,8 @@ public class Cliente {
             case 0:
                 
                 break;
+            case 1: 
+                break;
             default:
                 throw new AssertionError();
         }
