@@ -105,16 +105,16 @@ public class Peripheral {
 
     @Override
     public String toString() {
-        return "Peripheral{" + "nameProduct=" + nameProduct 
-                + ",\n nameProducer=" + nameProducer 
-                + ",\nprice=" + price 
-                + ",\n numberPorts=" + numberPorts 
-                + ",\n typePlug=" + typePlug 
-                + ",\n typeP=" + typeP 
-                + ",\n typePut=" + typePut 
-                + ",\n typeCartridge=" + typeCartridge 
-                + ",\n typeToner=" + typeToner 
-                + ",\n numberPage=" + numberPage +"\n" +'}';
+        return "Nombre del periferico: " + nameProduct 
+                + ",\n Fabricante: " + nameProducer 
+                + ",\n Precio: " + price 
+                + ",\n Numero de puertos disponibles: " + numberPorts 
+                + ",\n Tipo de conector: " + typePlug 
+                + ",\n Tipo de periferico: " + typeP 
+                + ",\n Tipo: " + typePut 
+                + ",\n Tipo de cartucho: " + typeCartridge 
+                + ",\n Tipo de toner:" + typeToner 
+                + ",\n Paginas impresas: " + numberPage +"\n";
     }
     
 }
