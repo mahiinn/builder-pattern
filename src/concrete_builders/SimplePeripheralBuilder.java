@@ -18,11 +18,7 @@ public class SimplePeripheralBuilder extends PeripheralBuilder{
     private Peripheral peripheral;
     
     private SimplePeripheralBuilder(){
-        this.peripheral = new Peripheral(
-                this.peripheral.getNameProduct(),
-                this.peripheral.getNameProducer(),
-                this.peripheral.getPrice()
-        );
+        this.peripheral = new Peripheral();
     }
     public static SimplePeripheralBuilder simplePeripheral(){
         return new SimplePeripheralBuilder();

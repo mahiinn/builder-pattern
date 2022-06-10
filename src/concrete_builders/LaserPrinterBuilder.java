@@ -18,11 +18,7 @@ public class LaserPrinterBuilder extends PeripheralBuilder {
     private Peripheral peripheral;
     
     private LaserPrinterBuilder(){
-        this.peripheral = new Peripheral(
-                this.peripheral.getNameProduct(),
-                this.peripheral.getNameProducer(),
-                this.peripheral.getPrice()
-        );
+        this.peripheral = new Peripheral();
     }
     public static LaserPrinterBuilder laserPrinter(){
         return new LaserPrinterBuilder();

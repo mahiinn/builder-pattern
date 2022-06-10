@@ -43,6 +43,10 @@ public class Processor {
     public void setPrice(double price) {
         this.price = price;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Processor{" + "nameProduct=" + nameProduct + ", nameProducer=" + nameProducer + ", price=" + price + '}';
+    }
+       
 }

@@ -4,6 +4,8 @@
  */
 package com;
 
+import static com.Data.*;
+
 /**
  *
  * @author mahin
@@ -11,7 +13,7 @@ package com;
 public class Cliente {
     
     public static void main(String[] args) {
-        
+        mostrarData();
     }
     
 }

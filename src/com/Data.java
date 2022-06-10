@@ -20,8 +20,9 @@ public class Data {
 //    private String typePlug;
 //    private TypePeripheral typeP = TypePeripheral.DEFAULT;
 //    private TypePut typePut = TypePut.DEFAULT;
-    public static void arrayObj(){
-        Peripheral obj[] = new Peripheral[7];
+    public static Peripheral obj[] = new Peripheral[7];
+    public static Peripheral[] arrayObj(){
+        
         Peripheral keyboard_1,keyboard_2,mouse_1,laser_printer_1,monitor_1,tableta_grafica_1,touch_screen_1;
         keyboard_1 = simplePeripheral()
                 .setTypePut(TypePut.INPUT)
@@ -69,5 +70,12 @@ public class Data {
         obj[4]=monitor_1;
         obj[5]=tableta_grafica_1;
         obj[6]=touch_screen_1;
+        return obj;
+    }
+    public static void mostrarData(){
+        arrayObj();
+        for (Peripheral i : obj) {
+            System.out.println(i.toString()); 
+        }
     }
 }

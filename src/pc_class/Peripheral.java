@@ -19,10 +19,8 @@ public class Peripheral {
     private String typeToner = "NOT APPLY"; //For laser printer
     private int numberPage=0;//For laser printer
 
-    public Peripheral(String nameProduct, String nameProducer, double price) {
-        this.nameProduct = nameProduct;
-        this.nameProducer = nameProducer;
-        this.price = price;
+    public Peripheral() {
+        
     }
 
     public String getNameProduct() {
@@ -103,6 +101,20 @@ public class Peripheral {
 
     public void setNumberPage(int numberPage) {
         this.numberPage = numberPage;
+    }
+
+    @Override
+    public String toString() {
+        return "Peripheral{" + "nameProduct=" + nameProduct 
+                + ",\n nameProducer=" + nameProducer 
+                + ",\nprice=" + price 
+                + ",\n numberPorts=" + numberPorts 
+                + ",\n typePlug=" + typePlug 
+                + ",\n typeP=" + typeP 
+                + ",\n typePut=" + typePut 
+                + ",\n typeCartridge=" + typeCartridge 
+                + ",\n typeToner=" + typeToner 
+                + ",\n numberPage=" + numberPage +"\n" +'}';
     }
     
 }

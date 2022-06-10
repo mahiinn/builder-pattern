@@ -18,11 +18,7 @@ public class InkjetPrinterBuilder extends PeripheralBuilder{
     Peripheral peripheral;
     
     private InkjetPrinterBuilder(){
-        this.peripheral = new Peripheral(
-                this.peripheral.getNameProduct(),
-                this.peripheral.getNameProducer(),
-                this.peripheral.getPrice()
-        );
+        this.peripheral = new Peripheral();
     }
     public static InkjetPrinterBuilder inkjetPrinter(){
         return new InkjetPrinterBuilder();
