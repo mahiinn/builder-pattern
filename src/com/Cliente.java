@@ -5,7 +5,7 @@
 package com;
 
 import static com.Data.*;
-
+import java.util.*;
 /**
  *
  * @author mahin
@@ -13,8 +13,18 @@ import static com.Data.*;
 public class Cliente {
     
     public static void main(String[] args) {
+        Scanner read = new Scanner (System.in);
         System.out.println("----------Perifericos disponibles----------");
         mostrarData();
+        System.out.println("\n Escoja un procesador a llevar");
+        int option = read.nextInt();
+        switch (option) {
+            case 0:
+                
+                break;
+            default:
+                throw new AssertionError();
+        }
     }
     
 }

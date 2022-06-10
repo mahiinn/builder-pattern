@@ -89,12 +89,14 @@ public class Data {
     public static void mostrarData(){
         arrayObj();
         arrayUnity();
+        int cont=0;
         for (Peripheral i : obj) {
-            System.out.println(i.toString()); 
+            System.out.println(cont+++". "+i.toString()); 
         }
+        cont=0;
         System.out.println("-------Procesadores disponibles---------\n");
         for (Processor i : unity) {
-            System.out.println(i.toString()); 
+            System.out.println(cont+++". "+i.toString()); 
         }
     }
 }
