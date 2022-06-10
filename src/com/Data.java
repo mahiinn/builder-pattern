@@ -7,6 +7,7 @@ package com;
 import pc_class.*;
 import static concrete_builders.SimplePeripheralBuilder.simplePeripheral;
 import static concrete_builders.LaserPrinterBuilder.laserPrinter;
+import static concrete_builders.ProcessorBuilder.unity;
 
 /**
  *
@@ -21,6 +22,7 @@ public class Data {
 //    private TypePeripheral typeP = TypePeripheral.DEFAULT;
 //    private TypePut typePut = TypePut.DEFAULT;
     public static Peripheral obj[] = new Peripheral[7];
+    public static Processor unity[] = new Processor [4];
     public static Peripheral[] arrayObj(){
         
         Peripheral keyboard_1,keyboard_2,mouse_1,laser_printer_1,monitor_1,tableta_grafica_1,touch_screen_1;
@@ -61,7 +63,7 @@ public class Data {
                 .setMinimumRequirements("Monitor Lenovo ThinkVision P27h-20 led 27 ", "Lenovo", 39.23)
                 .setNumberPorts(8)
                 .setTypePlug("USB-C, HDMI 1.4, 2 DisplayPort 1.4, 5 USB 3.1, Ethernet")
-                .setTypePeripheral(TypePeripheral.TGRAFICA).build();
+                .setTypePeripheral(TypePeripheral.TOUCHSCREEN).build();
         
         obj[0]=keyboard_1;
         obj[1]=keyboard_2;
@@ -72,9 +74,26 @@ public class Data {
         obj[6]=touch_screen_1;
         return obj;
     }
+    public static Processor[] arrayUnity(){
+        Processor unity_1, unity_2, unity_3, unity_4;
+        unity_1 = unity().setMinimumRequirements("Intel® Core™ i9-12900HX", "Intel", 606.00).build();
+        unity_2 = unity().setMinimumRequirements("AMD Ryzen™ 9 5950X", "Ryzen", 930.39).build();
+        unity_3 = unity().setMinimumRequirements("AMD Ryzen™ 5 5600G", "Ryzen", 196.52).build();
+        unity_4 = unity().setMinimumRequirements("Intel Core I5-12400 Lga1700", "Intel", 238.87).build();
+        unity[0] = unity_1;
+        unity[1] = unity_2;
+        unity[2] = unity_3;
+        unity[3] = unity_4;
+        return unity;
+    }
     public static void mostrarData(){
         arrayObj();
+        arrayUnity();
         for (Peripheral i : obj) {
+            System.out.println(i.toString()); 
+        }
+        System.out.println("-------Procesadores disponibles---------\n");
+        for (Processor i : unity) {
             System.out.println(i.toString()); 
         }
     }

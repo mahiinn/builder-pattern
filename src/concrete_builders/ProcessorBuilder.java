@@ -17,11 +17,7 @@ public class ProcessorBuilder implements Build<Processor>, FirstBuild<ProcessorB
     Processor unity;
 
     private ProcessorBuilder() {
-        this.unity = new Processor(
-                this.unity.getNameProduct(),
-                this.unity.getNameProducer(),
-                this.unity.getPrice()
-        );
+        this.unity = new Processor();
     }
 
     public static ProcessorBuilder unity() {

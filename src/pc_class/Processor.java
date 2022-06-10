@@ -14,10 +14,7 @@ public class Processor {
     private String nameProducer;
     private double price;
     
-    public Processor(String nameProduct, String nameProducer, double price) {
-        this.nameProduct = nameProduct;
-        this.nameProducer = nameProducer;
-        this.price = price;
+    public Processor() {
     }
 
     public String getNameProduct() {
@@ -46,7 +43,9 @@ public class Processor {
 
     @Override
     public String toString() {
-        return "Processor{" + "nameProduct=" + nameProduct + ", nameProducer=" + nameProducer + ", price=" + price + '}';
+        return "Nombre del procesador: " + nameProduct 
+                + ",\n Nombre del fabricante: " + nameProducer 
+                + ",\n Precio: " + price;
     }
        
 }
