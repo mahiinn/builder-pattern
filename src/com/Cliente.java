@@ -13,6 +13,7 @@ import static com.Data.*;
 public class Cliente {
     
     public static void main(String[] args) {
+        System.out.println("Perifericos disponibles");
         mostrarData();
     }
     
