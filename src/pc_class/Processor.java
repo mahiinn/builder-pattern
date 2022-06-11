@@ -12,7 +12,7 @@ public class Processor {
     
     private String nameProduct;
     private String nameProducer;
-    private double price;
+    private double price=0;
     
     public Processor() {
     }

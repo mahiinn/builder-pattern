@@ -10,7 +10,7 @@ package pc_class;
 public class Peripheral {
     private String nameProduct;
     private String nameProducer;
-    private double price;
+    private double price=0;
     private int numberPorts = 0;
     private String typePlug;
     private TypePeripheral typeP = TypePeripheral.DEFAULT;

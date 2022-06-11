@@ -14,7 +14,7 @@ public class PC {
     private Processor core;
     private ArrayList <Peripheral> input = new ArrayList<>();
     private ArrayList <Peripheral> output = new ArrayList<>();
-    private Peripheral special;
+    private Peripheral special=null;
     private Double precio;
 
     public Processor getCore() {

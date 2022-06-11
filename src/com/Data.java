@@ -42,14 +42,14 @@ public class Data {
                 .setTypePlug("USB")
                 .setTypePeripheral(TypePeripheral.MOUSE).build();
         laser_printer_1 = mouse_1 = laserPrinter()
-                .setTypePut(TypePut.OUTPUT)
+                .setTypePut(TypePut.OUTPUT)//
                 .setMinimumRequirements("Impresora multifunción HP LaserJet Pro", "HP", 196.03)
                 .setTypePlug("USB")
                 .setNumberPage(150)
                 .setTypeToner("TONER NEGRO")
                 .setTypePeripheral(TypePeripheral.LASERPRINTER).build();
         monitor_1 = simplePeripheral()
-                .setTypePut(TypePut.OUTPUT)
+                .setTypePut(TypePut.OUTPUT)//
                 .setMinimumRequirements("Monitor gamer Samsung F24T35 led 24 ", "Samsung", 176.50)
                 .setTypePlug("D-Sub, HDMI 1.4")
                 .setTypePeripheral(TypePeripheral.MONITOR).build();
@@ -91,12 +91,14 @@ public class Data {
         arrayUnity();
         int cont=0;
         for (Peripheral i : obj) {
-            System.out.println(cont+++". "+i.toString()); 
+            System.out.println(cont+". "+i.toString()); 
+            cont++;
         }
         cont=0;
         System.out.println("-------Procesadores disponibles---------\n");
         for (Processor i : unity) {
-            System.out.println(cont+++". "+i.toString()); 
+            System.out.println(cont+". "+i.toString()); 
+            cont++;
         }
     }
 }
